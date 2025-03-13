@@ -1,26 +1,27 @@
 programa
 {
-	cadeia nome
-	inteiro idade
+	inteiro idade
 	funcao inicio()
 	{
-		escreva("Digite o seu nome: ")
-		leia(nome)
-		escreva("Sua idade: ")
+		escreva("Digite a sua idade?\n")
 		leia(idade)
-		
-		se(idade >= 18){
-			escreva(nome, " Você pode entrar!\n")
-	}senao{escreva(nome, "Você não pode entrar!")
-				}
-	}
+	se(idade < 12){
+		escreva(idade + " Anos = Infantil")
+		}senao se(idade >= 12 e idade  < 18){
+        escreva(idade + " Anos = Adolecentes")}
+        senao se(idade >= 18 e idade < 60){
+        	escreva(idade + " Anos = Adulto")
+        	}senao {
+        		escreva(idade + " Anos: Idoso")
+        	}
+        }
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 191; 
+ * @POSICAO-CURSOR = 348; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
